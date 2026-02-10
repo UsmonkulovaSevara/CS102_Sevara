@@ -18,5 +18,43 @@ int main() {
      char charName = 65;
      cout << charName << "\t" << sizeof(charName) << endl;
 
+     cout << " \"I am standing\" on the edge of some crazy cliff.\n"
+             "What I have to do, I have to cach everybody\\ \n"
+             "if they start to go over the cliff-I mean\\ \n"
+             "\\if they're running and they don't look \n"
+             "where they're going I have to come out \n"
+             "from somewhere and \t \t catch them. " <<endl;
+
+    int a=189;
+    char b='B';
+    float division=a/3;
+    cout << division << "\t";
+    float decimalvalue=b;
+    cout << decimalvalue << "\t";
+    float addition=(a+b)/5;
+    cout << addition << "\t";
+    char character=b+(a/10-1);
+    cout << character << endl;
+
+    int value1;
+    int value2;
+    int sum;
+    cout << "Enter value 1: ";
+    cin >> value1;
+    cout << "Enter value 2: ";
+    cin >> value2;
+    sum = value1 + value2;
+    cout << "Sum is:" << sum << endl;
+
+    int x;
+    int y;
+    cout << "Enter value 1: ";
+    cin >> x;
+    cout << "Enter value 2: ";
+    cin >> y;
+    int t=(3*((x*x)+3))/((y/4)+3);
+    cout << "t=" << t << endl;
+
+
      return 0;
 }
