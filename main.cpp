@@ -55,6 +55,39 @@ int main() {
     int t=(3*((x*x)+3))/((y/4)+3);
     cout << "t=" << t << endl;
 
+    int d;
+    cout << "Enter diameter value: ";
+    cin >> d;
+    float p=3.14;
+    int r=d/2;
+    float area = 4*p*r*r;
+    cout << "Area of the sphere:" << area << endl;
+
+    float v1;
+    float v0;
+    float time;
+    cout << "Enter starting velocity (in meters per second): ";
+    cin >> v0;
+    cout << "Enter ending velocity (in meters per second): ";
+    cin >> v1;
+    cout << "Enter time span (in seconds) : ";
+    cin >> time;
+    float av=(v1-v0)/time;
+    cout << "Average velocity: " << av << endl;
+
+    float distance;
+    float fuel;
+    float price;
+    cout << "Enter distance in miles: ";
+    cin >> distance;
+    cout << "Enter fuel in miles per gallon: ";
+    cin >> fuel;
+    cout << "Enter price per gallon: ";
+    cin >> price;
+    float cost=(distance/fuel)*price;
+    cout << "The cost of driving is: $" << cost << endl;
+
+
 
      return 0;
 }
