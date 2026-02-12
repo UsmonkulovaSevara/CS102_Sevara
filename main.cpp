@@ -1,5 +1,6 @@
 #include <iostream>
 #include <iomanip>
+#include <math.h>
 using namespace std;
 
 int main() {
@@ -98,6 +99,19 @@ int main() {
     double fraction=k-l;
     cout << "Fractional part: " << fraction << endl;
 
+    int students;
+    cout << "Enter number of students: ";
+    cin >> students;
+    int first = students/11;
+    cout << "first group:" << first << endl;
+    int last = students % 11;
+    cout << "last group:" << last << endl;
+
+    float s;
+    cout << "Enter the side of the hexagon:";
+    cin >> s;
+    float hexagon=((3*sqrt (3))/2)*s*s;
+    cout << "Area of the hexagon:" << hexagon << endl;
 
      return 0;
 }
