@@ -87,6 +87,16 @@ int main() {
     float cost=(distance/fuel)*price;
     cout << "The cost of driving is: $" << cost << endl;
 
+    double f=1.13e3;
+    double g=411e-4;
+    cout << f << "\t" << g << endl;
+
+    float k;
+    cout << "Enter a number: ";
+    cin >> k;
+    int l=k;
+    double fraction=k-l;
+    cout << "Fractional part: " << fraction << endl;
 
 
      return 0;
