@@ -4,23 +4,21 @@
 using namespace std;
 
 int main() {
-     cout << "Problem 14" << endl;
-     double CGPA;
-     double lecture=14;
-     int absence, projects;
-     cin >> CGPA ;
-     cin >> absence;
-     cin >> projects;
-     double attendance=((lecture-absence)/lecture)*100;
-     cout << attendance << endl;
-     if (CGPA>=3.5 && attendance>=90 && projects>=3)
-          cout << "Eligible" << endl;
-     else if (CGPA>=3.7 && attendance>=80 && projects>=2)
-          cout << "Eligible" << endl;
-     else if (CGPA>=4.0 && attendance>=70 && projects>=1)
-          cout << "Eligible" << endl;
+     cout << "Problem 15" << endl;
+     double speed1, speed2, speed3, monthlyPayment, loyaltyYears, outstandingBalance;
+     cin >> speed1 >> speed2 >> speed3 >> monthlyPayment >> loyaltyYears >> outstandingBalance;
+     double avgSpeed=(speed1 + speed2 + speed3)/3;
+     bool upgrade = false;
+     if (avgSpeed >= 100 && (monthlyPayment >= 50 || loyaltyYears >=3))
+          upgrade = false;
+     else if (outstandingBalance > 0)
+          upgrade = true;
+     if (upgrade)
+          cout << "Granted";
      else
-          cout << "Not Eligible" <<endl;
+          cout << "Not Granted";
+
+
 
 
 
